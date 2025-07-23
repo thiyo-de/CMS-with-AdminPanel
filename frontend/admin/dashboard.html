@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <h2>Welcome, <span id="username-display"></span> 👋</h2>
+  <button id="logout-btn">Logout</button>
+
+  <hr />
+ <h3 id="form-title">Create New Post</h3>
+<form id="post-form">
+  <input type="hidden" id="post-id" />
+  <input type="text" id="title" placeholder="Title" required /><br />
+  <textarea id="content" placeholder="Content" required></textarea><br />
+  <button type="submit" id="submit-btn">Create</button>
+  <button type="button" id="cancel-edit" style="display:none;">Cancel</button>
+</form>
+
+  <hr />
+  <h3>All Posts</h3>
+  <ul id="post-list"></ul>
+
+  <script src="/frontend/js/dashboard.js"></script>
+</body>
+</html>

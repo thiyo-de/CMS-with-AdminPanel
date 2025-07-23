@@ -1,0 +1,33 @@
+cms-jwt/
+├── backend/                 # Node.js + Express backend
+│   ├── models/             # Mongoose schemas (User, Post)
+│   │   ├── User.js
+│   │   └── Post.js
+│   ├── routes/             # API routes
+│   │   ├── auth.js         # Login route (JWT generation)
+│   │   └── posts.js        # CRUD routes for posts
+│   ├── controllers/        # Logic for auth & posts
+│   │   ├── authController.js
+│   │   └── postController.js
+│   ├── middleware/         # JWT verification
+│   │   └── verifyToken.js
+│   ├── server.js           # Main Express server
+│   └── .env                # Environment variables
+│
+├── frontend/                # Static HTML + JS frontend
+│   ├── index.html           # Public homepage
+│   ├── post.html            # View single post
+│   ├── admin/               # Admin dashboard
+│   │   ├── login.html       # Admin login page
+│   │   ├── dashboard.html   # Admin post manager
+│   │   ├── new.html         # Create post form
+│   │   └── edit.html        # Edit post form
+│   ├── css/
+│   │   └── styles.css       # Shared styles
+│   ├── js/
+│   │   ├── api.js           # API helpers
+│   │   ├── auth.js          # Login/logout logic
+│   │   └── dashboard.js     # Admin CRUD logic
+│
+├── package.json             # Project config
+└── README.md
